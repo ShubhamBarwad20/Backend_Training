@@ -1,1 +1,12 @@
+<?php
+
+/** @var \Training\LayoutExample\Block\Layout\Index $block */
+
+?>
+
+<h2><?= $block->getSubitile() ?></h2>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ipsa, consequuntur, amet illum, vel sunt magnam laborum dicta in assumenda provident ab repudiandae explicabo consectetur eveniet dolorum ducimus aperiam quos!</p>
+
+<?= $block->getChildHtml('cms_block_example') ?>
+
+<? $block->getNodeHtml() ?>

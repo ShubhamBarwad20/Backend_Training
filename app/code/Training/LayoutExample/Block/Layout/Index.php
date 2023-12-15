@@ -18,4 +18,14 @@ class Index extends Template
         }
         return $this;
     }
+
+    public function getSubitile(): string
+    {
+        return 'Learn Magneto2 Development';
+    }
+
+    public function getNodeHtml() :string
+    {
+        return $this->getLayout()->createBlock(Note::class)->toHtml();
+    }
 }

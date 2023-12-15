@@ -11,7 +11,14 @@
         </referenceBlock> -->
         <!-- <referenceBlock name="page.main.title" remove="true" /> -->
         <referenceContainer name="content">
-            <block class="Training\LayoutExample\Block\Layout\Index" name="layout_example" template="Training_LayoutExample::content.phtml" />
+            <block class="Training\LayoutExample\Block\Layout\Index" name="layout_example" template="Training_LayoutExample::content.phtml">
+                <block name="layout_note" class="Training\LayoutExample\Block\Layout\Note" template="Training_LayoutExample::note.phtml" />
+                <block name="cms_block_example" class="Magento\Cms\Block\Block">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">cms_block_example</argument>
+                    </arguments>
+                </block>
+            </block>
         </referenceContainer>
     </body>
 </page>
